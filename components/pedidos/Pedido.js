@@ -190,7 +190,7 @@ const Pedido = ({ pedido }) => {
                                 <option value="Cancelado">Cancelado</option>
                             </select>
                             <button
-                                className="w-2/4 lg:w-1/5 text-sm lg:text-md h-10 text-center bg-pink-100 hover:bg-red-200 focus:outline-none p-2 rounded-lg text-black border-2 border-red-300 font-semibold ml-5 transition duration-500 ease-in-out"
+                                className="w-2/4 md:w-full lg:w-1/4 text-sm lg:text-md h-10 text-center bg-pink-100 hover:bg-red-200 focus:outline-none p-2 rounded-lg text-black border-2 border-red-300 font-semibold ml-5 transition duration-500 ease-in-out"
                                 onClick={() => abrirCerrarModal()}
                             >Eliminar pedido</button>
                         </div>

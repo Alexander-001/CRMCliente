@@ -13,7 +13,7 @@ const ModalDelete = (props) => {
                 </div>
                 <div className="modal-body text-center mt-8">
                     <i className="fas fa-exclamation-circle"></i>
-                    <h1 className="mt-10 flex-col">{props.text}<span className="text-red-500 font-bold">{props.useremail || props.nombre ? props.useremail || props.nombre : (
+                    <h1 className="mt-10 text-xl md:text-2xl flex-col">{props.text}<span className="text-red-500 mt-2 text-lg md:text-2xl font-bold">{props.useremail || props.nombre ? props.useremail || props.nombre : (
                         props.pedido.map(articulo => (
                             <div
                                 key={articulo.id}

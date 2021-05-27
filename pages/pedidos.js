@@ -49,6 +49,7 @@ const Pedidos = () => {
   const router = useRouter();
 
   const getClientsUser = useQuery(GET_CLIENTS_USER);
+  const { data, loading, error } = useQuery(GET_ORDERS_USER);
 
   if (getClientsUser.loading) return "Cargando..";
 
@@ -57,8 +58,6 @@ const Pedidos = () => {
     router.push('/login');
     return "Loading..";
   }
-
-  const { data, loading, error } = useQuery(GET_ORDERS_USER);
 
   if (loading) return "Cargando...";
   const { obtenerPedidosVendedor } = data;
