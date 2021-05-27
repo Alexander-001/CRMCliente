@@ -1,3 +1,10 @@
+:root {
+  --fuentePrimaria: 'Concert One', cursive;
+  --fuenteSecundaria: 'Roboto Slab', serif;
+  --fuenteTerciaria: 'Merienda', cursive;
+  --fuenteCuarta: 'PT Sans', sans-serif;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +20,181 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.barra-lateral {
+  position: relative;
+  left: 0;
+  transition: all .2s ease-in-out;
+}
+
+.no-menu.barra-lateral {
+  position: fixed;
+  left: -100%;
+  transition: all .4s ease-in-out;
+}
+
+#menu .fa-arrow-right{
+  display: none;
+}
+
+.titulo {
+  font-family: var(--fuenteSecundaria);
+}
+
+.titulo__login {
+  font-family: var(--fuentePrimaria);
+}
+
+.titulo__logo{
+  font-family: var(--fuenteTerciaria);
+}
+
+.titulo__lista-sidebar {
+  font-family: var(--fuenteCuarta)
+}
+
+.nav__sidebar li {
+  padding: 5px 0 1px 10px;
+}
+
+.container__password {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.switch {
+  position: absolute;
+  right: 1rem;
+  background-color: transparent;
+  font-size: 15px;
+  text-align: center;
+}
+
+.container-table {
+  max-height: 300px;
+  height: 100%;
+  width: 100%
+}
+
+.container-table-products {
+  max-height: 600px;
+  height: 100%;
+}
+
+.container-table-no-info {
+  max-height: 500px;
+  height: 55vh;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 1060px !important;
+  outline: none;
+}
+
+.modal-dialog .modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: none;
+  padding: 64px 56px 112px;
+  border-radius: 50px !important;
+}
+
+.modal-dialog .modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-dialog .modal-header .close {
+  height: 36px;
+  width: 36px;
+  padding: 0;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+
+.modal-header img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.modal-dialog .modal-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-body i {
+  font-size: 80px;
+}
+
+.modal-dialog .modal-body h1 {
+  font-size: 30px;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-dialog .modal-footer {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-footer .modal-cancelar {
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  width: 45%;
+  height: 70px;
+  margin: 0;
+  text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.modal-footer .btn-primario {
+  font-size: 25px;
+  margin: 0;
+  width: 45%;
+  height: 70px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.tabla-no-info {
+  display: grid;
+}
+
+.company {
+  padding: 5px;
 }
